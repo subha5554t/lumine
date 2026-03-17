@@ -1,55 +1,193 @@
-# Lumine AI Image Editing Platform
+🎨 Lumine — AI-Powered Image Editing SaaS
 
-## Overview
-Lumine is a versatile AI-powered image editing platform that provides users with cutting-edge tools to enhance and manipulate images efficiently.
+Lumine is a modern full-stack AI image editing platform that enables users to create, edit, and enhance images using intelligent tools and a real-time canvas editor.
 
-## Features
-- **AI-Powered Editing**: Utilize advanced AI algorithms for automatic image enhancement.
-- **Multiple Editing Tools**: Features include cropping, filtering, and retouching.
-- **User-Friendly Interface**: Designed for both beginners and professionals.
-- **Real-time Collaboration**: Share and edit projects with team members in real time.
-- **Export in Various Formats**: Supports exporting images in PNG, JPEG, and more.
+Built with a production-grade architecture using Next.js 15, Convex, Clerk, and Fabric.js, Lumine demonstrates scalable SaaS design and modern web engineering practices.
 
-## Pricing
-Lumine offers flexible pricing plans:
-- **Free Tier**: Basic editing features with limited access.
-- **Pro Plan**: $15/month for advanced tools and enhanced features.
-- **Enterprise Solutions**: Customized pricing for large teams with specific needs.
+🌐 Live Demo: https://lumine-two.vercel.app
+📂 GitHub: https://github.com/subha5554t/lumine
 
-## Tech Stack
-- **Frontend**: React.js for responsive UI.
-- **Backend**: Node.js with Express for server-side functionalities.
-- **Database**: MongoDB for scalable data management.
-- **AI Models**: TensorFlow and OpenAI models for image processing.
+---
 
-## Project Structure
-```
-/lumine
-|-- /src
-|   |-- /components
-|   |-- /pages
-|   |-- /styles
-|-- /public
-|-- /server
-|-- package.json
-|-- README.md
-```
+🚀 Features
 
-## Installation Instructions
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/subha5554t/lumine.git
-   cd lumine
-   ```
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-3. **Run the application**:
-   ```bash
-   npm start
-   ```
+🧠 AI-Powered Editing
 
-## Usage
-- After installation, access Lumine through your localhost at `http://localhost:3000`.
-- Explore the features, upload images, and start editing immediately!
+- Background Removal – Automatically remove image backgrounds
+- AI Upscaler – Enhance image resolution without losing quality
+- Image Extension – Expand images beyond original dimensions
+- Smart Crop & Resize – Maintain aspect ratio with precision
+- Color & Light Adjustments – Fine-tune brightness, contrast, saturation
+
+---
+
+🎛️ Advanced Editor
+
+- Real-time canvas editor powered by Fabric.js
+- Drag & drop image upload
+- Instant preview of edits
+- Smooth UI animations & transitions
+- Dark / Light theme support
+
+---
+
+🔐 Authentication System
+
+- Secure login/signup with Clerk
+- OAuth & session handling
+- Protected routes and user sessions
+
+---
+
+📂 Project Management
+
+- Create, update, delete projects
+- Save edited images in real-time
+- Persistent data using Convex database
+
+---
+
+💳 SaaS Monetization
+
+- Free & Pro plans
+- Upgrade modal system
+- Feature gating for premium users
+
+---
+
+🏗️ Tech Stack
+
+Frontend
+
+- Next.js 15 (App Router)
+- React 19
+- Tailwind CSS v4
+- Radix UI / ShadCN
+
+Backend (BaaS)
+
+- Convex – Database, serverless functions, real-time sync
+
+Authentication
+
+- Clerk – User management & security
+
+Image Processing
+
+- Fabric.js – Canvas-based editing
+- ImageKit – Image storage & optimization
+
+Utilities
+
+- React Dropzone – File uploads
+- Sonner – Notifications
+- Next Themes – Theme management
+
+Deployment
+
+- Vercel – Serverless hosting with global CDN
+
+---
+
+📁 Project Structure
+
+lumine/
+├── app/                # Next.js App Router
+│   ├── (auth)/         # Authentication routes
+│   ├── (main)/         # Main application
+│   ├── api/            # API routes
+│   └── layout.js
+│
+├── components/         # Reusable UI components
+├── convex/             # Backend functions & schema
+├── context/            # Global state management
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── public/             # Static assets
+├── middleware.js       # Middleware
+└── package.json
+
+---
+
+⚙️ Getting Started
+
+Prerequisites
+
+- Node.js (v18+)
+- npm
+
+Installation
+
+git clone https://github.com/subha5554t/lumine.git
+cd lumine
+npm install
+
+Environment Variables
+
+Create a ".env.local" file:
+
+NEXT_PUBLIC_CONVEX_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=
+
+Run the App
+
+npm run dev
+
+Open 👉 http://localhost:3000
+
+---
+
+📦 Available Scripts
+
+Command| Description
+npm run dev| Start development server
+npm run build| Build for production
+npm start| Start production server
+npm run lint| Run ESLint
+
+---
+
+🔥 Key Highlights
+
+- ⚡ Real-time editing experience
+- 🧠 AI-powered image processing
+- 🔐 Secure authentication system
+- 📦 Scalable backend using Convex
+- 🌍 Deployed on Vercel (CDN + Edge)
+
+---
+
+🧠 Technical Strength (For Recruiters)
+
+- Built using latest modern stack (Next.js 15 + React 19)
+- Implements full SaaS architecture (auth + billing logic + projects)
+- Uses BaaS (Convex) for scalable backend design
+- Integrates canvas-based image processing (Fabric.js)
+- Production-ready deployment with Vercel
+
+---
+
+🚀 Future Improvements
+
+- TypeScript migration
+- Batch image processing
+- AI-based auto-enhancements
+- Collaboration features
+- Mobile app version
+
+---
+
+👨‍💻 Author
+
+Subhadip Mahanty
+GitHub: https://github.com/subha5554t
+
+---
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
