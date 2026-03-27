@@ -7,5 +7,5 @@ export const useCanvas = () => {
   if (!context) {
     throw new Error("Error");
   }
- 
+  return context;
 };
